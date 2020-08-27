@@ -1,0 +1,26 @@
+.background-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		'. blob'
+		'intro-gradient intro-gradient';
+  grid-gap: 2rem;
+  height: 100vh;
+  margin-top: 5rem;
+  z-index: -1;
+}
+
+.blob {
+	display: block;
+  grid-area: blob;
+  grid-row: 1/2;
+}
+
+.intro-gradient {
+	display: block;
+	grid-area: intro-gradient;
+	grid-row: 2/3;
+	/* background-color: blue; */
+}
+

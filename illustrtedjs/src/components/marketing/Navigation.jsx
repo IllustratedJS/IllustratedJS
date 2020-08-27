@@ -1,11 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Button from '../AuthButton';
+import logo from '../../assets/iJS-logo.png';
 import './Navigation.css';
 const Navigation = () => {
   return (
     <nav className="navigation">
-      <div className="navigationLogo">Illustrated JS</div>
+      <div className="navigationLogo-box">
+        <img src={logo} className="navigationLogo"/>
+      </div>
+      <div className='navigationLinks-box'>
+
       <ul className="navigationLinks">
         <li>
           <NavLink
@@ -13,7 +18,7 @@ const Navigation = () => {
             activeClassName="navLinkActive"
             exact
             to="/"
-          >
+            >
             Why Illustrated JS?
           </NavLink>
         </li>
@@ -22,8 +27,8 @@ const Navigation = () => {
             to="/Content"
             activeClassName="navLinkActive"
             className="navLink"
-          >
-            Content
+            >
+            Curriculum
           </NavLink>
         </li>
         <li>
@@ -31,7 +36,7 @@ const Navigation = () => {
             to="/Purchase"
             activeClassName="navLinkActive"
             className="navLink"
-          >
+            >
             Purchase
           </NavLink>
         </li>
@@ -39,6 +44,7 @@ const Navigation = () => {
           <Button text="Log In" />
         </li>
       </ul>
+      </div>
     </nav>
   );
 };

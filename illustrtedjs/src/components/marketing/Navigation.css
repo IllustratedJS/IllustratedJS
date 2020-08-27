@@ -6,14 +6,20 @@
   align-items: center;
   /* align-content: center; */
 }
-.navigationLogo {
+.navigationLogo-box {
   width: 50%;
-  font-size: 3rem;
-  color: rgb(0, 140, 255);
+}
+
+.navigationLogo{
+  width: 40%;
+}
+
+.navigationLinks-box{
+width:50%;
 }
 .navigationLinks {
   display: flex;
-  width: 50%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -22,7 +28,7 @@
   list-style: none;
   color: black;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .navLinkActive {

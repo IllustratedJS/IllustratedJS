@@ -1,72 +1,108 @@
+.intro-box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 500px 1fr 1fr;
+	grid-template-areas:
+    'introText blob'
+    'intro-gradient intro-gradient'
+		'intro-gradient intro-gradient';
+	grid-gap: 2rem;
+	/* height: 100vh; */
+  /* margin-top: 5rem; */
+  position: absolute;
+  top: -10px;
+  z-index: -1;
+}
+
+.blob {
+  display: block;
+  /* height: 70vh; */
+  justify-self: end;
+	grid-area: blob;
+  grid-row: 1/2;
+  /* background-color: gray; */
+}
+
+.intro-gradient {
+	display: block;
+	grid-area: intro-gradient;
+	grid-row: 2/3;
+	/* background-color: blue; */
+}
+
 .introText {
-  font-size: 4rem;
-  text-align: center;
-  color: rgb(44, 53, 59);
-  margin: 3% 0%;
+	/* display: flex;
+  flex-direction: column; */
+	margin: 10rem 0 0 2rem;
+	font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+	text-align: left;
+	color: rgb(44, 53, 59);
+	align-self: center;
+	grid-area: introText;
 }
 
 .introColor {
-  color: #1e6ae3;
+	color: #1e6ae3;
 }
 
 .introCheckoutContentContainer {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .introCheckoutContent {
-  font-size: 1.9rem;
-  color: rgb(44, 53, 59);
-  margin-left: 3%;
-  line-height: 2.5;
+	font-size: 1.9rem;
+	color: rgb(44, 53, 59);
+	margin-left: 3%;
+	line-height: 2.5;
 }
 .introTextList {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
-  margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto;
 }
 .intro1 {
-  width: 75%;
+	width: 75%;
 }
 .intro2 {
-  width: 75%;
-  margin-left: 28%;
+	width: 75%;
+	margin-left: 28%;
 }
 
 .introButtons {
-  display: flex;
-  width: 63%;
-  justify-content: space-around;
-  margin: 0 auto;
+	display: flex;
+	width: 63%;
+	justify-content: space-around;
+	margin: 0 auto;
 }
 
 #introPurchase {
-  font-size: 2.2rem;
-  width: 350px;
-  margin-top: 4%;
+	font-size: 2.2rem;
+	width: 350px;
+	margin-top: 4%;
 }
 
 #introLearn {
-  font-size: 2.2rem;
-  width: 350px;
-  margin-top: 4%;
-  background: none;
-  color: rgb(44, 53, 59);
-  border: 2px solid rgb(44, 53, 59);
-  box-shadow: none;
+	font-size: 2.2rem;
+	width: 350px;
+	margin-top: 4%;
+	background: none;
+	color: rgb(44, 53, 59);
+	border: 2px solid rgb(44, 53, 59);
+	box-shadow: none;
 }
 
 #introLearn:hover {
-  cursor: pointer;
-  transition: 0.1s;
-  color: white;
-  background: linear-gradient(
-    90deg,
-    rgba(30, 106, 227, 1) 0%,
-    rgb(0, 140, 255) 100%
-  );
+	cursor: pointer;
+	transition: 0.1s;
+	color: white;
+	background: linear-gradient(
+		90deg,
+		rgba(30, 106, 227, 1) 0%,
+		rgb(0, 140, 255) 100%
+	);
 }
 /* .introMedia {
   display: flex;

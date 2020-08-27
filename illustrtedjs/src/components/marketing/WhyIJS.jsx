@@ -4,16 +4,18 @@ import Intro from './Intro';
 import IntroFeatures from './IntroFeatures';
 import AuthButton from '../AuthButton';
 import LearnButton from '../LearnButton';
+import Background from "../marketing/background";
 
 const WhyIJS = () => {
   return (
     <main>
       <div className="introContainer">
         <Intro />
-        <IntroFeatures />
+        {/* <Background/> */}
+        {/* <IntroFeatures /> */}
         <div className="introButtons">
-          <AuthButton text="Purchase Now" id="introPurchase" />
-          <LearnButton text="Learn More" id="introLearn" />
+          {/* <AuthButton text="Purchase Now" id="introPurchase" />
+          <LearnButton text="Learn More" id="introLearn" /> */}
         </div>
       </div>
     </main>
