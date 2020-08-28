@@ -1,7 +1,27 @@
+.curriculum-box{
+  padding: 3rem 5rem;
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  'currBlob'
+  'currTitle';
+}
+
+
 .curriculum-title{
-  
+  grid-area: currTitle;
+  grid-row: 1/1;
+  grid-column: 1/2;
 }
 
 .currBlob{
   z-index: -1;
+  transform:rotate(45deg);
+  grid-row: 1/1;
+  grid-column: 1/2;
+}
+
+.curriculum{
+  grid-area: curriculum;
 }

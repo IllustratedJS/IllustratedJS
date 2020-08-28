@@ -15,7 +15,7 @@ const Intro = () => {
 					nullam congue dictum nulla egestas sit nulla quisque. Velit, faucibus
 					consequat neque, condimentum proin tincidunt maecenas ac.
 				</p>
-				<button>Curriculum</button>
+				<a href="#curriculum" className="currButton">Curriculum</a>
 			</div>
 				<img className='blob' src={blob} />
 		</div>

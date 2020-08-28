@@ -4,6 +4,7 @@ import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
 import './App.css';
 import { ReactQueryDevtools } from 'react-query-devtools';
 import ScrollTop from './utils/ScrollTop';
+
 require('dotenv').config();
 function App() {
   // const { isLoading, user } = useAuth0;

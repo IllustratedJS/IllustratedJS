@@ -1,11 +1,13 @@
 import React from 'react';
 import CurrBlob from "../../assets/curr-blob.svg";
+import "./Curriculum.css";
 
 const Curriculum = () => {
   return(
-    <div>
+    <div className="curriculum-box">
+      <a name="curriculum"></a>
+      <img className="currBlob" src={CurrBlob} />
       <div className="curriculum-title">
-        <img className="currBlob" src={CurrBlob} />
         <h2>Curriculum</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis sapiente fuga laborum repellendus quod tempore sequi nihil aliquid veritatis distinctio consequatur eius, quis illo deleniti, adipisci, quidem ducimus dolore est?</p>
       </div>

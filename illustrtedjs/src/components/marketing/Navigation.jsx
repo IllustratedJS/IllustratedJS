@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import Button from '../AuthButton';
 import logo from '../../assets/iJS-logo.png';
 import './Navigation.css';
+import BurgerMenu from "./BurgerMenu.jsx";
+
 const Navigation = () => {
   return (
     <nav className="navigation">
@@ -43,9 +45,16 @@ const Navigation = () => {
         <li>
           <Button text="Log In" />
         </li>
+
       </ul>
       </div>
+      <div className="burger">
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
     </nav>
+
   );
 };
 

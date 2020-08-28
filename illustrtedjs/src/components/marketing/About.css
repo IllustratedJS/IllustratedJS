@@ -8,7 +8,7 @@
     'about-title about-title about-title'
     'vid-desc illu doc-code'
     'about-5 probs about-6';
-  grid-gap: 2rem;
+  /* grid-gap: 1rem; */
   color: white;
   text-align: center;
 }
