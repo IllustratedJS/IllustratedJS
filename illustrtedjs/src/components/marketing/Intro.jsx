@@ -1,6 +1,5 @@
 import React from 'react';
-import gray from '../../assets/intro-gray-blob.svg';
-import introGradient from '../../assets/intro-wave.svg';
+import blob from '../../assets/blob2.svg';
 
 const Intro = () => {
 	return (
@@ -18,10 +17,7 @@ const Intro = () => {
 				</p>
 				<button>Curriculum</button>
 			</div>
-				<img className='blob' src={gray} />
-			<div className='intro-gradient'>
-				<img src={introGradient} />
-			</div>
+				<img className='blob' src={blob} />
 		</div>
 	);
 };

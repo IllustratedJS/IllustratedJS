@@ -1,6 +1,8 @@
 import React from 'react';
 import './WhyIJS.css';
 import Intro from './Intro';
+import About from './About';
+import Curriculum from './Curriculum';
 import IntroFeatures from './IntroFeatures';
 import AuthButton from '../AuthButton';
 import LearnButton from '../LearnButton';
@@ -11,6 +13,8 @@ const WhyIJS = () => {
     <main>
       <div className="introContainer">
         <Intro />
+        <About />
+        <Curriculum />
         {/* <Background/> */}
         {/* <IntroFeatures /> */}
         <div className="introButtons">

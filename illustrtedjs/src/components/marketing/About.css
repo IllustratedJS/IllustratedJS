@@ -1,0 +1,63 @@
+.about-box{
+  background-color: #6B9EFC;
+  padding: 3rem 5rem;
+  display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas:
+    'about-title about-title about-title'
+    'vid-desc illu doc-code'
+    'about-5 probs about-6';
+  grid-gap: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.top-wave{
+  position: absolute;
+  bottom: -2px;
+}
+
+.about-title{
+  grid-area: about-title;
+  font-size: 1.5rem;
+  padding: 0 30%;
+}
+
+.vid-desc{
+  grid-area: vid-desc;
+  padding: 2rem 7rem;
+}
+
+.illu{
+  grid-area: illu;
+  padding: 2rem 7rem;
+}
+
+.doc-code{
+  grid-area: doc-code;
+  padding: 2rem 7rem;
+}
+
+.probs{
+  grid-area: probs;
+  padding: 2rem 7rem;
+}
+
+.about-5{
+  grid-area:about-5;
+  padding: 2rem 7rem;
+}
+
+.about-6{
+  grid-area: about-6;
+  padding: 2rem 7rem;
+}
+
+h4{
+  font-size: 2rem;
+}
+
+.icons{
+  width: 40%;
+}

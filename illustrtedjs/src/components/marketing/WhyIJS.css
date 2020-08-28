@@ -1,40 +1,25 @@
 .intro-box {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 500px 1fr 1fr;
-	grid-template-areas:
-    'introText blob'
-    'intro-gradient intro-gradient'
-		'intro-gradient intro-gradient';
+	grid-template-rows: 1fr;
+	grid-template-areas: 'introText blob';
 	grid-gap: 2rem;
-	/* height: 100vh; */
-  /* margin-top: 5rem; */
-  position: absolute;
-  top: -10px;
-  z-index: -1;
+	/* top: -10px; */
+	/* overflow: hidden; */
 }
 
 .blob {
-  display: block;
-  /* height: 70vh; */
-  justify-self: end;
-	grid-area: blob;
-  grid-row: 1/2;
-  /* background-color: gray; */
-}
-
-.intro-gradient {
 	display: block;
-	grid-area: intro-gradient;
-	grid-row: 2/3;
-	/* background-color: blue; */
+	height: 85vh;
+	justify-self: end;
+	grid-area: blob;
 }
 
 .introText {
 	/* display: flex;
   flex-direction: column; */
-	margin: 10rem 0 0 2rem;
-	font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+	margin: 0 0 0 8rem;
+	font-size: calc(16px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
 	text-align: left;
 	color: rgb(44, 53, 59);
 	align-self: center;
