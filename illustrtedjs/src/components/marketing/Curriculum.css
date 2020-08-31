@@ -1,0 +1,40 @@
+.curriculum-box {
+  padding: 1rem 1rem;
+  /* position: absolute; */
+  top: -20px;
+	display: grid;
+	grid-template-columns: repeat(3, 500px);
+	grid-template-rows: 500px;
+  align-items: center;
+  justify-content: center;
+	justify-items: center;
+	grid-template-areas:
+		'currBlob'
+    'currTitle'
+    "curriculum";
+}
+
+.curriculum-title {
+	grid-area: currTitle;
+	grid-row: 1/1;
+  grid-column: 2/2;
+  text-align: center;
+  align-items: top;
+  /* color: white; */
+}
+
+h2{
+  font-size: 2rem;
+}
+
+.currBlob {
+	z-index: -1;
+	grid-row: 1/1;
+	grid-column: 1/4;
+  width: 70%;
+  /* height: 80vh; */
+}
+
+.curriculum {
+	grid-area: curriculum;
+}

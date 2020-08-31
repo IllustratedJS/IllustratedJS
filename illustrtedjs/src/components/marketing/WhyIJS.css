@@ -1,72 +1,104 @@
+.intro-box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: 'introText blob';
+	grid-gap: 2rem;
+	/* top: -10px; */
+	/* overflow: hidden; */
+}
+
+.blob {
+	display: block;
+	height: 85vh;
+	justify-self: end;
+	grid-area: blob;
+}
+
 .introText {
-  font-size: 4rem;
-  text-align: center;
-  color: rgb(44, 53, 59);
-  margin: 3% 0%;
+	/* display: flex;
+  flex-direction: column; */
+	margin: 0 0 0 8rem;
+	font-size: calc(16px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+	text-align: left;
+	color: rgb(44, 53, 59);
+	align-self: center;
+	grid-area: introText;
 }
 
 .introColor {
-  color: #1e6ae3;
+	color: #1e6ae3;
+}
+
+.currButton{
+	text-decoration:none;
+	color: white;
+	padding: 1rem 2rem;
+	background-color: #56C1E2;
+	border-radius: 5rem;
+	font-size:1rem;
+	font-weight: 600;
+
 }
 
 .introCheckoutContentContainer {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .introCheckoutContent {
-  font-size: 1.9rem;
-  color: rgb(44, 53, 59);
-  margin-left: 3%;
-  line-height: 2.5;
+	font-size: 1.9rem;
+	color: rgb(44, 53, 59);
+	margin-left: 3%;
+	line-height: 2.5;
 }
 .introTextList {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
-  margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto;
 }
 .intro1 {
-  width: 75%;
+	width: 75%;
 }
 .intro2 {
-  width: 75%;
-  margin-left: 28%;
+	width: 75%;
+	margin-left: 28%;
 }
 
 .introButtons {
-  display: flex;
-  width: 63%;
-  justify-content: space-around;
-  margin: 0 auto;
+	display: flex;
+	width: 63%;
+	justify-content: space-around;
+	margin: 0 auto;
 }
 
 #introPurchase {
-  font-size: 2.2rem;
-  width: 350px;
-  margin-top: 4%;
+	font-size: 2.2rem;
+	width: 350px;
+	margin-top: 4%;
 }
 
 #introLearn {
-  font-size: 2.2rem;
-  width: 350px;
-  margin-top: 4%;
-  background: none;
-  color: rgb(44, 53, 59);
-  border: 2px solid rgb(44, 53, 59);
-  box-shadow: none;
+	font-size: 2.2rem;
+	width: 350px;
+	margin-top: 4%;
+	background: none;
+	color: rgb(44, 53, 59);
+	border: 2px solid rgb(44, 53, 59);
+	box-shadow: none;
 }
 
 #introLearn:hover {
-  cursor: pointer;
-  transition: 0.1s;
-  color: white;
-  background: linear-gradient(
-    90deg,
-    rgba(30, 106, 227, 1) 0%,
-    rgb(0, 140, 255) 100%
-  );
+	cursor: pointer;
+	transition: 0.1s;
+	color: white;
+	background: linear-gradient(
+		90deg,
+		rgba(30, 106, 227, 1) 0%,
+		rgb(0, 140, 255) 100%
+	);
 }
 /* .introMedia {
   display: flex;

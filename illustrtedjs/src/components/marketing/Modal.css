@@ -1,0 +1,10 @@
+.modal-box{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 60vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
