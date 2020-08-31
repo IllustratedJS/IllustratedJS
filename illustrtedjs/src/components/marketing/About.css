@@ -20,7 +20,7 @@
 
 .about-title{
   grid-area: about-title;
-  font-size: 1.5rem;
+	font-size: calc(16px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
   padding: 0 30%;
 }
 
@@ -55,7 +55,7 @@
 }
 
 h4{
-  font-size: 2rem;
+  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .icons{

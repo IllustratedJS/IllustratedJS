@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import './About.css';
 import TopWave from '../../assets/intro-top-wave.svg';
 import BottomWave from '../../assets/intro-bottom-wave.svg';
@@ -8,6 +9,8 @@ import Problems from "../../assets/Problems.svg";
 import Doc from "../../assets/Doc.svg";
 import Code from "../../assets/Code.svg";
 import Discord from "../../assets/Discord.svg";
+import Modal from "./Modal.jsx";
+import { Link } from "react-router-dom";
 
 
 const About = () => {
@@ -21,6 +24,13 @@ const About = () => {
       </div>
         <div className="vid-desc">
           <img className="icons" src={Video}/>
+          <Link
+            to={{
+              pathname: 'modal/1',
+              state: {modal: true}
+            }}>
+              Open Modal
+            </Link>
           <h4>Video Description</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, cum repellat, ullam nesciunt nam unde</p>
         </div>
