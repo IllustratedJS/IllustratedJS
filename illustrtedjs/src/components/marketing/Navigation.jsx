@@ -4,6 +4,7 @@ import Button from '../AuthButton';
 import logo from '../../assets/iJS-logo.png';
 import './Navigation.css';
 import BurgerMenu from "./BurgerMenu.jsx";
+import Modal from "./Modal.jsx";
 
 const Navigation = () => {
   return (

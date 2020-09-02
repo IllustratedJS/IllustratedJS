@@ -27,31 +27,37 @@
 .vid-desc{
   grid-area: vid-desc;
   padding: 2rem 7rem;
+  cursor: pointer;
 }
 
 .illu{
   grid-area: illu;
   padding: 2rem 7rem;
+  cursor: pointer;
 }
 
 .doc-code{
   grid-area: doc-code;
   padding: 2rem 7rem;
+  cursor: pointer;
 }
 
 .probs{
   grid-area: probs;
   padding: 2rem 7rem;
+  cursor: pointer;
 }
 
 .about-5{
   grid-area:about-5;
   padding: 2rem 7rem;
+  cursor: pointer;
 }
 
 .about-6{
   grid-area: about-6;
   padding: 2rem 7rem;
+  cursor: pointer;
 }
 
 h4{
