@@ -79,16 +79,34 @@ const About = () => {
                   <h4>100+ Problems</h4>
                   <p> Hi </p>
                 </Modal>
-        <div className="about-6"> 
-          <img className="icons" src={Discord}/>
-          <h4>Video Description</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, cum repellat, ullam nesciunt nam unde</p>
-        </div>
-        <div className="probs">
-          <img className="icons" src={Problems}/>
-          <h4>100+ Problems</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, cum repellat, ullam nesciunt nam unde</p>
-        </div>
+              <Modal 
+                  activate = {({setIsVisible}) => (
+                    <div className="about-6" type="button"
+                    onClick={() => {
+                      setIsVisible(true)
+                    }}>
+                      <img className="icons" src={Discord}/>
+                      <h4>Online Community</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, cum repellat, ullam nesciunt nam unde</p>
+                    </div>
+                  )}> 
+                    <h4>Online Community</h4>
+                    <p> Hi </p>
+                  </Modal>
+                <Modal 
+                  activate = {({setIsVisible}) => (
+                    <div className="about-5" type="button"
+                    onClick={() => {
+                      setIsVisible(true)
+                    }}>
+                      <img className="icons" src={Problems}/>
+                      <h4>Illustrations</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, cum repellat, ullam nesciunt nam unde</p>
+                    </div>
+                  )}> 
+                    <h4>Illustrations</h4>
+                    <p> Hi </p>
+                  </Modal>
     </div>
     <img src={BottomWave}/>
     </div>
