@@ -1,7 +1,7 @@
 .contentNavigation {
-  width: 15%;
+  /* width: 15%; */
   margin-left: 12%;
-  position: fixed;
+  position: sticky;
   color: rgb(44, 53, 59);
 }
 
