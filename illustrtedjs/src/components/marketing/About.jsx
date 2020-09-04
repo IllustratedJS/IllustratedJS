@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { withRouter } from "react-router-dom";
+import React from "react";
 import './About.css';
 import TopWave from '../../assets/intro-top-wave.svg';
 import BottomWave from '../../assets/intro-bottom-wave.svg';
@@ -10,7 +9,6 @@ import Doc from "../../assets/Doc.svg";
 import Code from "../../assets/Code.svg";
 import Discord from "../../assets/Discord.svg";
 import Modal from "./Modal.jsx";
-import { Link } from "react-router-dom";
 
 
 const About = () => {
