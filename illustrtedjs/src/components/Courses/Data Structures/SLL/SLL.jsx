@@ -13,7 +13,7 @@ const SLL = () => {
     <>
       <h1 className="contentTitle">Singly Linked List</h1>
       <div className="contentContainer">
-        <Navigation navList={query} />
+        <Navigation className="navigation" navList={query} />
         <PageRoutes content={query} />
       </div>
     </>

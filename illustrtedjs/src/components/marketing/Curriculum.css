@@ -4,22 +4,22 @@
   top: -20px;
 	display: grid;
 	grid-template-columns: repeat(3, 500px);
-	grid-template-rows: 500px;
+	grid-template-rows: 500px 200px;
   align-items: center;
   justify-content: center;
 	justify-items: center;
 	grid-template-areas:
 		'currBlob'
-    'currTitle'
-    "curriculum";
+    'currTitle';
+    /* "curriculum1 curriculum2 curriculum3"; */
 }
-
+ 
 .curriculum-title {
 	grid-area: currTitle;
 	grid-row: 1/1;
   grid-column: 2/2;
   text-align: center;
-  align-items: top;
+  padding-bottom: 3rem;
   /* color: white; */
 }
 
@@ -35,6 +35,15 @@ h2{
   /* height: 80vh; */
 }
 
-.curriculum {
-	grid-area: curriculum;
+.curriculum1 {
+  grid-row: 1/1;
+	grid-area: curriculum1;
+}
+.curriculum2 {
+  grid-row: 2/2;
+	grid-area: curriculum2;
+}
+.curriculum3 {
+  grid-row: 3/3;
+	grid-area:curriculum3;
 }

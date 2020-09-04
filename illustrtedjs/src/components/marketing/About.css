@@ -1,63 +1,74 @@
-.about-box{
-  background-color: #6B9EFC;
-  padding: 3rem 5rem;
-  display: grid;
+.about-box {
+	background-color: #6b9efc;
+	padding: 3rem 5rem;
+	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-areas:
-    'about-title about-title about-title'
-    'vid-desc illu doc-code'
-    'about-5 probs about-6';
-  /* grid-gap: 1rem; */
-  color: white;
-  text-align: center;
+		'about-title about-title about-title'
+		'vid-desc illu doc-code'
+		'about-5 probs about-6';
+	/* grid-gap: 1rem; */
+	color: white;
+	text-align: center;
 }
 
-.top-wave{
-  position: absolute;
-  bottom: -2px;
+.top-wave {
+  /* position: absolute; */
+  position: relative;
+	top: 10px;
 }
 
-.about-title{
-  grid-area: about-title;
+.about-title {
+	grid-area: about-title;
 	font-size: calc(16px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
-  padding: 0 30%;
+	padding: 0 30%;
 }
 
-.vid-desc{
-  grid-area: vid-desc;
-  padding: 2rem 7rem;
+.vid-desc {
+	grid-area: vid-desc;
+	padding: 2rem 7rem;
+	cursor: pointer;
 }
 
-.illu{
-  grid-area: illu;
-  padding: 2rem 7rem;
+.illu {
+	grid-area: illu;
+	padding: 2rem 7rem;
+	cursor: pointer;
 }
 
-.doc-code{
-  grid-area: doc-code;
-  padding: 2rem 7rem;
+.doc-code {
+	grid-area: doc-code;
+	padding: 2rem 7rem;
+	cursor: pointer;
 }
 
-.probs{
-  grid-area: probs;
-  padding: 2rem 7rem;
+.probs {
+	grid-area: probs;
+	padding: 2rem 7rem;
+	cursor: pointer;
 }
 
-.about-5{
-  grid-area:about-5;
-  padding: 2rem 7rem;
+.about-5 {
+	grid-area: about-5;
+	padding: 2rem 7rem;
+	cursor: pointer;
 }
 
-.about-6{
-  grid-area: about-6;
-  padding: 2rem 7rem;
+.about-6 {
+	grid-area: about-6;
+	padding: 2rem 7rem;
+	cursor: pointer;
 }
 
-h4{
-  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+h4 {
+	font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.icons{
-  width: 40%;
+.icons {
+	width: 40%;
+}
+
+.introParagraph {
+	text-align: initial;
 }
