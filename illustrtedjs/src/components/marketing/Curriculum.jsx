@@ -1,5 +1,6 @@
 import React from 'react';
 import CurrBlob from "../../assets/curr-blob.svg";
+import Check from "../../assets/check-mark.svg";
 import "./Curriculum.css";
 
 const Curriculum = () => {
@@ -9,17 +10,40 @@ const Curriculum = () => {
       <img className="currBlob" src={CurrBlob} />
       <div className="curriculum-title">
         <h2>Curriculum</h2>
-        <p>Data Structures, Algorithms and Advanced JavaScript</p>
       </div>
-      {/* <div className="curriculum1">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi cum, enim perferendis inventore dolor corrupti rerum illo excepturi eius, voluptas, et harum. Iure quia tenetur commodi quo maxime consequuntur iste?</p>
+      <div className="curriculum-body">
+        <div className="curr-topics">
+          <h4>Data Structures</h4>
+        <ul className="checked-curr">
+          <li><img className="check" src={Check}/> &nbsp; Stacks + Queues</li>
+          <li><img className="check" src={Check}/> &nbsp; Big O Notation</li>
+          <li><img className="check" src={Check}/> &nbsp; Singly Linked Lists</li>
+          <li><img className="check" src={Check}/> &nbsp; Doubly Linked Lists</li>
+          <li><img className="check" src={Check}/>.</li>
+        </ul>
+          </div>
+          <div className="curr-topics">
+          <h4>Algorithms</h4>
+        <ul className="checked-curr">
+          <li><img className="check" src={Check}/> &nbsp; Stacks + Queues</li>
+          <li><img className="check" src={Check}/> &nbsp; Big O Notation</li>
+          <li><img className="check" src={Check}/> &nbsp; Singly Linked Lists</li>
+          <li><img className="check" src={Check}/> &nbsp; Doubly Linked Lists</li>
+          <li><img className="check" src={Check}/>.</li>
+        </ul>
+          </div>
+        <div className="curr-topics">
+          <h4>Advanced Javascript</h4>
+        <ul className="checked-curr">
+          <li><img className="check" src={Check}/> &nbsp; Stacks + Queues</li>
+          <li><img className="check" src={Check}/> &nbsp; Big O Notation</li>
+          <li><img className="check" src={Check}/> &nbsp; Singly Linked Lists</li>
+          <li><img className="check" src={Check}/> &nbsp; Doubly Linked Lists</li>
+          <li><img className="check" src={Check}/>.</li>
+        </ul>
+          </div>
       </div>
-      <div className="curriculum2">
-        <p>Borem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi cum, enim perferendis inventore dolor corrupti rerum illo excepturi eius, voluptas, et harum. Iure quia tenetur commodi quo maxime consequuntur iste?</p>
-      </div>
-      <div className="curriculum3">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi cum, enim perferendis inventore dolor corrupti rerum illo excepturi eius, voluptas, et harum. Iure quia tenetur commodi quo maxime consequuntur iste?</p>
-      </div> */}
+      
     </div>
   )
 }

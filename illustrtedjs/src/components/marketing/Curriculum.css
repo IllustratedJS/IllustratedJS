@@ -1,49 +1,69 @@
 .curriculum-box {
-  padding: 1rem 1rem;
-  /* position: absolute; */
-  top: -20px;
+	padding: 1rem 1rem;
+	/* position: absolute; */
+	top: -200px;
 	display: grid;
-	grid-template-columns: repeat(3, 500px);
-	grid-template-rows: 500px 200px;
-  align-items: center;
-  justify-content: center;
-	justify-items: center;
-	grid-template-areas:
-		'currBlob'
-    'currTitle';
-    /* "curriculum1 curriculum2 curriculum3"; */
+  grid-template-columns: .1fr 1fr .1fr;
+	align-items: center;
+	justify-content: center;
+  justify-items: center;
 }
- 
+
 .curriculum-title {
 	grid-area: currTitle;
 	grid-row: 1/1;
-  grid-column: 2/2;
-  text-align: center;
-  padding-bottom: 3rem;
-  /* color: white; */
+	grid-column: 2;
+	text-align: center;
+	padding-bottom: 3rem;
 }
 
-h2{
-  font-size: 2rem;
+h2 {
+	font-size: 2rem;
 }
 
 .currBlob {
 	z-index: -1;
 	grid-row: 1/1;
-	grid-column: 1/4;
-  width: 70%;
-  /* height: 80vh; */
+	grid-column: 2;
+	width: 70%;
+	display: block;
 }
 
-.curriculum1 {
-  grid-row: 1/1;
-	grid-area: curriculum1;
-}
-.curriculum2 {
+.curriculum-body {
+	grid-area: curriculum-body;
+  display: flex;
   grid-row: 2/2;
-	grid-area: curriculum2;
+  top: -20px;
+  grid-column: 1/4;
+  justify-content: center;
+  background-color: #56C1E2;
+  padding: 3rem 3rem;
+  border-radius: 1rem;
+  text-align: center;
 }
-.curriculum3 {
-  grid-row: 3/3;
-	grid-area:curriculum3;
+
+.curr-topics{
+  margin: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.checked-curr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.checked-curr li{
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.check{
+  width: 15%;
+}
+
+.curr-grey-blob{
+  grid-column: 3;
 }

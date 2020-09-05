@@ -10,7 +10,7 @@ const Intro = () => {
 					Platform
 				</p>
 				<h1 className='introTitle'>Reshape your learning</h1>
-				<p >
+				<p style={{'text-align': 'justify'}}>
 				Computer Science for those without a math and engineering degree. Learn skills to transform your applications, improve performance and crush your interview. Watch complex structures transform into life with examples you can relate to. Get started now with illustrative examples, detailed notes, code snippets, video demos and more. 
 				</p>
 				<a href="#curriculum" className="currButton">Curriculum</a>

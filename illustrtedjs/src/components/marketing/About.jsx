@@ -17,7 +17,7 @@ const About = () => {
 			<div className='about-box'>
 				<div className='about-title'>
 					<h2>About Illustrated JS</h2>
-					<p className='introParagraph'>
+					<p className='introParagraph' style={{'text-align': 'justify'}}>
 						We're on a mission to change the way you think and learn about
 						computer science. Don't spend another minute looking through threads
 						for solutions or watching 4 different videos just to try to piece

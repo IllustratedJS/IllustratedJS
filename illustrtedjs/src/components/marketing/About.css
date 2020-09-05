@@ -1,5 +1,10 @@
 .about-box {
-	background-color: #6b9efc;
+	background:
+    linear-gradient(#6B9EFC, #4b7fd1),
+    linear-gradient(to top left, #56C1E2, transparent 50%),
+    linear-gradient(to bottom right, #56C1E2, transparent 30%);
+    ;
+  background-blend-mode: screen;
 	padding: 3rem 5rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -13,6 +18,8 @@
 	text-align: center;
 }
 
+
+
 .top-wave {
   /* position: absolute; */
   position: relative;
@@ -22,42 +29,42 @@
 .about-title {
 	grid-area: about-title;
 	font-size: calc(16px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
-	padding: 0 30%;
+  padding: 0 10%;
 }
 
 .vid-desc {
 	grid-area: vid-desc;
-	padding: 2rem 7rem;
+	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .illu {
 	grid-area: illu;
-	padding: 2rem 7rem;
+	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .doc-code {
 	grid-area: doc-code;
-	padding: 2rem 7rem;
+	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .probs {
 	grid-area: probs;
-	padding: 2rem 7rem;
+	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .about-5 {
 	grid-area: about-5;
-	padding: 2rem 7rem;
+	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .about-6 {
 	grid-area: about-6;
-	padding: 2rem 7rem;
+	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
