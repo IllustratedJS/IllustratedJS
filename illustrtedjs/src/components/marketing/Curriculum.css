@@ -6,7 +6,7 @@
   grid-template-columns: .1fr 1fr .1fr;
 	align-items: center;
 	justify-content: center;
-	justify-items: center;
+  justify-items: center;
 }
 
 .curriculum-title {
@@ -33,9 +33,35 @@ h2 {
 	grid-area: curriculum-body;
   display: flex;
   grid-row: 2/2;
-  grid-column: 2;
+  top: -20px;
+  grid-column: 1/4;
   justify-content: center;
-  background-color: khaki;
+  background-color: #56C1E2;
+  padding: 3rem 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.curr-topics{
+  margin: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.checked-curr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.checked-curr li{
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.check{
+  width: 15%;
 }
 
 .curr-grey-blob{

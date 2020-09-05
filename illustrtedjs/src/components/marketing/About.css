@@ -1,5 +1,10 @@
 .about-box {
-	background-color: #6b9efc;
+	background:
+    linear-gradient(#6B9EFC, #4b7fd1),
+    linear-gradient(to top left, #56C1E2, transparent 50%),
+    linear-gradient(to bottom right, #56C1E2, transparent 30%);
+    ;
+  background-blend-mode: screen;
 	padding: 3rem 5rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
