@@ -5,23 +5,19 @@ import logo from '../../assets/iJS-logo.png';
 import './Navigation.css';
 import BurgerMenu from "./BurgerMenu.jsx";
 import Modal from "./Modal.jsx";
-import NavigationSlide from './NavigationSlide.jsx';
-// import NavSlide from './NavigationSlide.jsx';
 
 const Navigation = () => {
 
   function handleSlide(e) {
     const nav = document.querySelector('.navigationLinks');
-    const navLinks = document.querySelectorAll('.navigationLinks li')
-  
+    const eachLink = document.querySelectorAll('.navigationLinks li')
 
     e.preventDefault();
     // Toggle Navigation to slide in/out on Burger Menu click
     nav.classList.toggle('nav-slide-active')
 
     // Animate individual link to enter on Burger Menu
-    navLinks.forEach((link, index) => {
-      console.log(index);
+    eachLink.forEach((link, index) => {
       if(link.style.animation) {
         link.style.animation = ``
       } else {
