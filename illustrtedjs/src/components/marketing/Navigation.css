@@ -56,20 +56,20 @@ width:50%;
 
 @media screen and (max-width:1024px){
   .navigationLinks-box{
-    width: 90%;
+    width: 100%;
   }
   .navigationLogo{
     width: 70%;
   }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:980px){
   .navigationLinks{
     position: absolute;
     right: 0px;
     height: 85vh;
-    top: 8vh;
-    width: 40%;
+    top: 5vh;
+    width: 30%;
     align-items: center;
     justify-content: space-around;
     background-color: white;
@@ -82,5 +82,21 @@ width:50%;
   }
   .burger{
     display: block;
+  }
+}
+
+.nav-slide-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
