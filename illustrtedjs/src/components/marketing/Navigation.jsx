@@ -7,6 +7,26 @@ import BurgerMenu from "./BurgerMenu.jsx";
 import Modal from "./Modal.jsx";
 
 const Navigation = () => {
+
+  function handleSlide(e) {
+    const nav = document.querySelector('.navigationLinks');
+    const eachLink = document.querySelectorAll('.navigationLinks li')
+
+    e.preventDefault();
+    // Toggle Navigation to slide in/out on Burger Menu click
+    nav.classList.toggle('nav-slide-active')
+
+    // Animate individual link to enter on Burger Menu
+    eachLink.forEach((link, index) => {
+      if(link.style.animation) {
+        link.style.animation = ``
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4 + .3}s`
+      }
+    })
+  }
+
+
   return (
     <nav className="navigation">
       <div className="navigationLogo-box">
@@ -49,7 +69,7 @@ const Navigation = () => {
 
       </ul>
       </div>
-      <div className="burger">
+      <div className="burger" onClick={handleSlide}>
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>
