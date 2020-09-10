@@ -1,18 +1,26 @@
 .intro-box {
 	display: grid;
+	height: 80vh;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
-	grid-template-areas: 'introText blob';
+	grid-template-areas: 'introText computer';
 	grid-gap: 2rem;
-	/* top: -10px; */
-	/* overflow: hidden; */
 }
 
-.blob {
-	display: block;
-	height: 85vh;
-	justify-self: end;
-	grid-area: blob;
+.intro-blob{
+	size: auto;
+	z-index: -1;
+	position: absolute;
+	left: 50%;
+	top: -20%;
+}
+
+.computer{
+	grid-area: computer;
+	width: 50%;
+	display: flex;
+	align-self: center;
+	justify-self: center;
 }
 
 .introText {

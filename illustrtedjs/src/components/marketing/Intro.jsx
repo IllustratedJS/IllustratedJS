@@ -1,5 +1,6 @@
 import React from 'react';
-import blob from '../../assets/blob2.svg';
+import blob from '../../assets/intro-grey-blob.svg';
+import computer from '../../assets/computer-svg-simple.svg';
 
 const Intro = () => {
 	return (
@@ -15,7 +16,7 @@ const Intro = () => {
 				</p>
 				<a href="#curriculum" className="currButton">Curriculum</a>
 			</div>
-				<img className='blob' src={blob} />
+				<img className="computer" alt="computer graphic with computer science symbols" src={computer}/>
 		</div>
 	);
 };
