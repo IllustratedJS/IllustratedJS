@@ -1,9 +1,7 @@
 .curriculum-box {
 	padding: 1rem 1rem;
-	/* position: absolute; */
-	top: -200px;
 	display: grid;
-  grid-template-columns: .1fr 1fr .1fr;
+  grid-template-columns: repeat(3, minmax(320px, 1fr));
 	align-items: center;
 	justify-content: center;
   justify-items: center;
@@ -14,19 +12,19 @@
 	grid-row: 1/1;
 	grid-column: 2;
 	text-align: center;
-	padding-bottom: 3rem;
+  padding: 20rem;
+  background-image: url("../../assets/curr-blob.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.curriculum-title img{
+  display: block;
 }
 
 h2 {
 	font-size: 2rem;
-}
-
-.currBlob {
-	z-index: -1;
-	grid-row: 1/1;
-	grid-column: 2;
-	width: 70%;
-	display: block;
 }
 
 .curriculum-body {
@@ -36,7 +34,18 @@ h2 {
   top: -20px;
   grid-column: 1/4;
   justify-content: center;
-  background-color: #56C1E2;
+  background: 
+  linear-gradient(
+		to bottom left, transparent 20%,
+		#4b7fd1,
+		#56C1E2
+  ),
+  linear-gradient(
+    to top left,
+    #fff,
+		#9CE2FE
+  )
+  ;
   padding: 3rem 3rem;
   border-radius: 1rem;
   text-align: center;

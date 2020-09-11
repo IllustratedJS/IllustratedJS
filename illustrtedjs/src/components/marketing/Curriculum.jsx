@@ -7,7 +7,7 @@ const Curriculum = () => {
   return(
     <div className="curriculum-box">
       <a name="curriculum"></a>
-      <img className="currBlob" src={CurrBlob} />
+      {/* <img className="currBlob" src={CurrBlob} /> */}
       <div className="curriculum-title">
         <h2>Curriculum</h2>
       </div>

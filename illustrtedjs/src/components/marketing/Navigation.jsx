@@ -30,7 +30,7 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       <div className="navigationLogo-box">
-        <img src={logo} className="navigationLogo"/>
+        <img src={logo} alt="Logo for illustratedJS" className="navigationLogo"/>
       </div>
       <div className='navigationLinks-box'>
 

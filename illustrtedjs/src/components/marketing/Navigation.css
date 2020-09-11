@@ -69,12 +69,14 @@ width:50%;
   .navigationLinks{
     position: absolute;
     right: 0px;
-    height: 85vh;
+    height: 60vh;
     top: 5vh;
     width: 40%;
     align-items: center;
     justify-content: space-around;
+    border-bottom-left-radius: 5rem;
     background-color: white;
+    box-shadow:20px 20px 50px grey;
     overflow-x: hidden;
     flex-direction: column;
     transform: translateX(100%);
@@ -85,6 +87,9 @@ width:50%;
   }
   .burger{
     display: block;
+  }
+  .navigationLogo{
+    width: 100%;
   }
 }
 
