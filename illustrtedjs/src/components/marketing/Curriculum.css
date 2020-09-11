@@ -34,7 +34,18 @@ h2 {
   top: -20px;
   grid-column: 1/4;
   justify-content: center;
-  background-color: #56C1E2;
+  background: 
+  linear-gradient(
+		to bottom left, transparent 20%,
+		#4b7fd1,
+		#56C1E2
+  ),
+  linear-gradient(
+    to top left,
+    #fff,
+		#9CE2FE
+  )
+  ;
   padding: 3rem 3rem;
   border-radius: 1rem;
   text-align: center;
