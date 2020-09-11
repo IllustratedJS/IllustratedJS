@@ -1,65 +1,63 @@
 .about-box {
 	background:
     linear-gradient(#6B9EFC, #4b7fd1);
-	padding: 3rem 5rem;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 8rem repeat(3, 1fr) 8rem;
 	grid-template-rows: repeat(3, 1fr);
-	grid-template-areas:
-		'about-title about-title about-title'
-		'vid-desc illu doc-code'
-		'about-5 probs about-6';
-	/* grid-gap: 1rem; */
+	grid-column-gap: 2rem;
+	grid-row-gap: 2rem;
 	color: white;
+	padding-bottom: 5rem;
 	text-align: center;
 }
 
 
-
 .top-wave {
-  /* position: absolute; */
   position: relative;
 	top: 10px;
 }
 
 .about-title {
-	grid-area: about-title;
+	grid-area: 1 / 2 / 2 / 5;
 	font-size: calc(16px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
-  padding: 0 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 }
 
 .vid-desc {
-	grid-area: vid-desc;
+	grid-area: 2 / 2 / 3 / 3;
 	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .illu {
-	grid-area: illu;
+	grid-area: 2 / 3 / 3 / 4;
 	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .doc-code {
-	grid-area: doc-code;
+	grid-area: 2 / 4 / 3 / 5;
 	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .probs {
-	grid-area: probs;
+	grid-area: 3 / 2 / 4 / 3;
 	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .about-5 {
-	grid-area: about-5;
+	grid-area: 3 / 3 / 4 / 4;
 	padding: 2rem 2rem;
 	cursor: pointer;
 }
 
 .about-6 {
-	grid-area: about-6;
+	grid-area: 3 / 4 / 4 / 5;
 	padding: 2rem 2rem;
 	cursor: pointer;
 }
@@ -69,9 +67,19 @@ h4 {
 }
 
 .icons {
-	width: 40%;
+	width: 30%;
 }
 
 .introParagraph {
 	text-align: initial;
 }
+
+@media screen and (max-width: 1024px) {
+	.about-box{
+		display: flex;
+		flex-direction: column;
+		padding: 0 4rem;
+	}
+}
+
+@media screen and (max-width: 780px) {}

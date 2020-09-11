@@ -1,10 +1,10 @@
 .intro-box {
 	display: grid;
 	height: 80vh;
-	grid-template-columns: repeat(2, minmax(320px, 1fr));
-	grid-gap: 2rem;
-	grid-template-areas: 'introText computer';
-	align-items: center;
+	grid-template-columns: 8rem repeat(2, 1fr) 8rem;
+	grid-template-rows: 1fr;
+	/* grid-gap: 2rem; */
+	/* align-items: center; */
 }
 
 .intro-blob {
@@ -17,12 +17,12 @@
 
 .computer-box {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+	grid-area: 1 / 3 / 2 / 4;
 }
 
 .computer {
-	grid-area: computer;
-	width: 50%;
+	width: 70%;
 }
 
 .curr-grey-blob {
@@ -30,7 +30,9 @@
 	z-index: -1;
 	position: absolute;
 	left: 40%;
+	/* ---FIX THIS, JESS--- */
 	top: 2000px;
+	/* ---FIX THIS, JESS--- */
 }
 
 .intro-paragraph {
@@ -38,12 +40,12 @@
 }
 
 .introText {
-	margin: 0 0 0 8rem;
+	grid-area: 1 / 2 / 2 / 3;
+	/* margin: 0 0 0 8rem; */
 	font-size: calc(16px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
 	text-align: left;
 	color: rgb(44, 53, 59);
 	align-self: center;
-	grid-area: introText;
 }
 
 .introColor {
@@ -126,7 +128,7 @@
 	.introText {
 		font-size: 1rem;
 		text-align: center;
-		margin: 0 2rem;
+		margin: 0 4rem;
 	}
 	.intro-box {
 		display: flex;
@@ -135,7 +137,11 @@
 		margin-bottom: 10rem;
 	}
 	.computer-box {
-		width: 60%;
+		justify-content: center;
+		width: 100%;
+	}
+	.computer{
+		width: 40%;
 	}
 	.intro-blob {
 		z-index: -1;
@@ -145,10 +151,7 @@
 }
 
 @media screen and (max-width: 980px) {
-	.computer-box{
-		width:80%;
-		margin-top: 10rem;
-	}
+
 }
 
 /* .introMedia {
