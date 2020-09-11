@@ -11,12 +11,14 @@ const Intro = () => {
 					Platform
 				</p>
 				<h1 className='introTitle'>Reshape your learning</h1>
-				<p>
+				<p className="intro-paragraph">
 				Computer Science for those without a math and engineering degree. Learn skills to transform your applications, improve performance and crush your interview. Watch complex structures transform into life with examples you can relate to. Get started now with illustrative examples, detailed notes, code snippets, video demos and more. 
 				</p>
-				<a href="#curriculum" className="currButton">Curriculum</a>
+				<a href="#curriculum" className="intro-button">Curriculum</a>
 			</div>
+			<div className="computer-box">
 				<img className="computer" alt="computer graphic with computer science symbols" src={computer}/>
+			</div>
 		</div>
 	);
 };
