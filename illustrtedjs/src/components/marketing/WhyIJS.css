@@ -16,6 +16,10 @@
 	top: -20%;
 }
 
+.pre-header{
+	letter-spacing: 2px;
+}
+
 .computer-box {
 	display: flex;
 	justify-content: flex-end;
@@ -30,10 +34,13 @@
 	margin-bottom: 3rem;
 }
 
+.introTitle{
+	font-size: calc(46px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .introText {
 	grid-area: 1 / 2 / 2 / 3;
 	/* margin: 0 0 0 8rem; */
-	font-size: calc(16px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
 	text-align: left;
 	color: rgb(44, 53, 59);
 	align-self: center;
@@ -48,10 +55,13 @@
 	color: white;
 	margin-top: 4rem;
 	padding: 1rem 2rem;
-	background-color: #56c1e2;
+	background-color: #6B9EFC;
 	border-radius: 5rem;
 	font-size: 1rem;
 	font-weight: 600;
+	-webkit-box-shadow: 0px 0px 33px -8px #a9b1c1;
+	-moz-box-shadow: 0px 0px 33px -8px #a9b1c1;
+	box-shadow: 0px 0px 33px -8px #a9b1c1;
 }
 
 .introCheckoutContentContainer {

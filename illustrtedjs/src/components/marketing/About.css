@@ -6,6 +6,7 @@
 	grid-column-gap: 2rem;
 	grid-row-gap: 2rem;
 	text-align: center;
+	padding-bottom: 3rem;
 }
 
 
@@ -16,11 +17,14 @@
 
 .about-title {
 	grid-area: 1 / 2 / 2 / 5;
-	font-size: calc(14px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
 	display: flex;
 	color: white;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.about-title h2{
+	font-size: calc(18px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .topic-title{
