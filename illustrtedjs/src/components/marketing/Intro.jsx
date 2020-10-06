@@ -1,14 +1,13 @@
 import React from 'react';
-import blob from '../../assets/intro-grey-blob.svg';
 import computer from '../../assets/computer-svg-simple.svg';
 
 const Intro = () => {
 	return (
 		<div className='intro-box'>
 			<div className='introText'>
-				<p>
-					The <span className='introColor'> JavaScript</span> Computer Science
-					Platform
+				<p className="pre-header">
+					THE <span className='introColor'> JAVASCRIPT</span> COMPUTER SCIENCE
+					PLATFORM
 				</p>
 				<h1 className='introTitle'>Reshape your learning</h1>
 				<p className="intro-paragraph">

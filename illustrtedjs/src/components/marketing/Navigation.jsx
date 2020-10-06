@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Button from '../AuthButton';
-import logo from '../../assets/iJS-logo.png';
+import logo from '../../assets/iJS-logo-gradient.svg';
+
 import './Navigation.css';
 import BurgerMenu from "./BurgerMenu.jsx";
 import Modal from "./Modal.jsx";
@@ -29,11 +30,8 @@ const Navigation = () => {
 
   return (
     <nav className="navigation">
-      <div className="navigationLogo-box">
-        <img src={logo} alt="Logo for illustratedJS" className="navigationLogo"/>
-      </div>
+      <img src={logo} alt="Logo for illustratedJS" className="navigationLogo"/>
       <div className='navigationLinks-box'>
-
       <ul className="navigationLinks">
         <li>
           <NavLink
