@@ -36,8 +36,10 @@ const About = () => {
 								setIsVisible(true);
 							}}
 						>
-							<img className='icons' src={Video} />
-							<h4>Video Walk Through</h4>
+							<div className='topic-title'>
+								<img className='icons' src={Video} />
+								<h4> &nbsp; &nbsp; Video Walk Through</h4>
+							</div>
 							<p>
 								Documented steps walking you through each key decision when
 								solving a problem
@@ -57,8 +59,10 @@ const About = () => {
 								setIsVisible(true);
 							}}
 						>
-							<img className='icons' src={Illustration} />
-							<h4>Illustrations</h4>
+							<div className='topic-title'>
+								<img className='icons' src={Illustration} />
+								<h4> &nbsp; &nbsp; Illustrations</h4>
+							</div>
 							<p>
 								Visualize concepts through illustrations and animations during
 								each lesson
@@ -78,8 +82,10 @@ const About = () => {
 								setIsVisible(true);
 							}}
 						>
-							<img className='icons' src={Doc} />
-							<h4>Documented Code</h4>
+							<div className='topic-title'>
+								<img className='icons' src={Doc} />
+								<h4>&nbsp; &nbsp; Documented Code</h4>
+							</div>
 							<p>
 								Access to clearly commented code walking through each decision
 								made and WHY
@@ -99,8 +105,10 @@ const About = () => {
 								setIsVisible(true);
 							}}
 						>
-							<img className='icons' src={Code} />
-							<h4>100+ Problems</h4>
+							<div className='topic-title'>
+								<img className='icons' src={Code} />
+								<h4> &nbsp; &nbsp; 100+ Problems</h4>
+							</div>
 							<p>
 								We showed you how to solve the problem. Now it's your turn. Test your knowledge against a growing library of 100+ problems
 							</p>
@@ -119,8 +127,10 @@ const About = () => {
 								setIsVisible(true);
 							}}
 						>
+						<div className='topic-title'>
 							<img className='icons' src={Discord} />
-							<h4>Online Community</h4>
+							<h4>&nbsp; &nbsp;Online Community</h4>
+							</div>
 							<p>
 								Learning these concepts by yourself is hard. Join an active online community to learn, practice and interview with!
 							</p>
@@ -139,8 +149,10 @@ const About = () => {
 								setIsVisible(true);
 							}}
 						>
-							<img className='icons' src={Problems} />
-							<h4>Written Guides</h4>
+							<div className='topic-title'>
+								<img className='icons' src={Problems} />
+								<h4>&nbsp; &nbsp; Written Guides</h4>
+							</div>
 							<p>
 								Access how to solve a problem and understand what goes into the
 								decision making process at each step in the code
@@ -152,7 +164,6 @@ const About = () => {
 					<p> Hi </p>
 				</Modal>
 			</div>
-			<img src={BottomWave} />
 		</div>
 	);
 };

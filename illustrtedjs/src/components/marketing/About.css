@@ -1,13 +1,10 @@
 .about-box {
-	background:
-    linear-gradient(#6B9EFC, #4b7fd1);
+	background: #6B9EFC;
 	display: grid;
-	grid-template-columns: 8rem repeat(3, 1fr) 8rem;
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: .5fr repeat(3, 1fr) .5fr;
+	grid-template-rows: repeat(3, .25fr);
 	grid-column-gap: 2rem;
 	grid-row-gap: 2rem;
-	color: white;
-	padding-bottom: 5rem;
 	text-align: center;
 }
 
@@ -19,55 +16,92 @@
 
 .about-title {
 	grid-area: 1 / 2 / 2 / 5;
-	font-size: calc(16px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+	font-size: calc(14px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
 	display: flex;
+	color: white;
 	flex-direction: column;
 	justify-content: center;
+}
 
+.topic-title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	font-size: calc(12px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .vid-desc {
 	grid-area: 2 / 2 / 3 / 3;
 	padding: 2rem 2rem;
 	cursor: pointer;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0px 0px 33px -8px #336bd3;
+	-moz-box-shadow: 0px 0px 33px -8px #336bd3;
+	box-shadow: 0px 0px 33px -8px #336bd3;
 }
 
 .illu {
 	grid-area: 2 / 3 / 3 / 4;
 	padding: 2rem 2rem;
 	cursor: pointer;
+	background: white;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0px 0px 33px -8px #336bd3;
+	-moz-box-shadow: 0px 0px 33px -8px #336bd3;
+	box-shadow: 0px 0px 33px -8px #336bd3;
 }
 
 .doc-code {
 	grid-area: 2 / 4 / 3 / 5;
 	padding: 2rem 2rem;
 	cursor: pointer;
+	background: white;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0px 0px 33px -8px #336bd3;
+	-moz-box-shadow: 0px 0px 33px -8px #336bd3;
+	box-shadow: 0px 0px 33px -8px #336bd3;
 }
 
 .probs {
 	grid-area: 3 / 2 / 4 / 3;
 	padding: 2rem 2rem;
 	cursor: pointer;
+	background: white;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0px 0px 33px -8px #336bd3;
+	-moz-box-shadow: 0px 0px 33px -8px #336bd3;
+	box-shadow: 0px 0px 33px -8px #336bd3;
 }
 
 .about-5 {
 	grid-area: 3 / 3 / 4 / 4;
 	padding: 2rem 2rem;
 	cursor: pointer;
+	background: white;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0px 0px 33px -8px #336bd3;
+	-moz-box-shadow: 0px 0px 33px -8px #336bd3;
+	box-shadow: 0px 0px 33px -8px #336bd3;
 }
 
 .about-6 {
 	grid-area: 3 / 4 / 4 / 5;
 	padding: 2rem 2rem;
 	cursor: pointer;
-}
-
-h4 {
-	font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+	background: white;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0px 0px 33px -8px #336bd3;
+	-moz-box-shadow: 0px 0px 33px -8px #336bd3;
+	box-shadow: 0px 0px 33px -8px #336bd3;
 }
 
 .icons {
-	width: 30%;
+	width: 20%;
 }
 
 .introParagraph {
@@ -81,8 +115,7 @@ h4 {
 		padding: 0 4rem;
 	}
 	.icons {
-		width: 20%;
+		width: 10%;
 	}
 }
 
-@media screen and (max-width: 780px) {}

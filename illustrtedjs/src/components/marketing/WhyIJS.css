@@ -1,7 +1,8 @@
 .intro-box {
 	display: grid;
 	height: 80vh;
-	grid-template-columns: 8rem repeat(2, 1fr) 8rem;
+	margin-top: 4rem;
+	grid-template-columns: .5fr repeat(2, 1fr) .5fr;
 	grid-template-rows: 1fr;
 	/* grid-gap: 2rem; */
 	/* align-items: center; */
@@ -23,16 +24,6 @@
 
 .computer {
 	width: 70%;
-}
-
-.curr-grey-blob {
-	size: auto;
-	z-index: -1;
-	position: absolute;
-	left: 40%;
-	/* ---FIX THIS, JESS--- */
-	top: 2000px;
-	/* ---FIX THIS, JESS--- */
 }
 
 .intro-paragraph {
@@ -140,7 +131,7 @@
 		justify-content: center;
 		width: 100%;
 	}
-	.computer{
+	.computer {
 		width: 40%;
 	}
 	.intro-blob {
@@ -148,10 +139,6 @@
 		left: 50%;
 		width: 100%;
 	}
-}
-
-@media screen and (max-width: 980px) {
-
 }
 
 /* .introMedia {
