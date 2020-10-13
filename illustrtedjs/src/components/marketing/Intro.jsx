@@ -1,7 +1,19 @@
 import React from 'react';
-import computer from '../../assets/computer-svg-simple.svg';
+import Lottie from 'react-lottie';
+import computer from "../../assets/lotties/Computer.json";
+      // <Computer loop={true} />
 
 const Intro = () => {
+	const defaultOptions = {
+		
+		loop: false,
+		autoplay: true,
+		animationData: computer,
+		rendererSettings: {
+			className: "computer"
+			// preserveAspectRatio: "xMidYMid slice"
+		}
+	};
 	return (
 		<div className='intro-box'>
 			<div className='introText'>
@@ -16,7 +28,9 @@ const Intro = () => {
 				<a href="#curriculum" className="intro-button">Curriculum</a>
 			</div>
 			<div className="computer-box">
-				<img className="computer" alt="computer graphic with computer science symbols" src={computer}/>
+				<Lottie
+					options={defaultOptions}
+					/>
 			</div>
 		</div>
 	);
