@@ -45,7 +45,6 @@ const Curriculum = () => {
               <li><img className="check" src={Check}/> &nbsp; Singly Linked Lists</li>
               <li><img className="check" src={Check}/> &nbsp; Doubly Linked Lists</li>
             </ul>
-          
       </div>
     </div>
       <img src={BottomWave} /> 
