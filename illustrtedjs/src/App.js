@@ -9,19 +9,24 @@ require('dotenv').config();
 function App() {
   // const { isLoading, user } = useAuth0;
   // console.log('user', user);
-  return (
-    <div>
-      <ReactQueryDevtools />
-      <ScrollTop />
-      <Auth0Provider
-        domain="illustratedjs.us.auth0.com"
-        clientId="1KwBPIfZaYuoaBQWJqeVw3f2e2rXK4HB"
-        redirectUri={`${window.location.origin}/content`}
-      >
-        <Home />
-      </Auth0Provider>
-    </div>
-  );
+  const { isLoading } = useAuth0;
+  if (isLoading) {
+    return <div>...Loading</div>;
+  } else {
+    return (
+      <div>
+        <ReactQueryDevtools />
+        <ScrollTop />
+        <Auth0Provider
+          domain="illustratedjs.us.auth0.com"
+          clientId="1KwBPIfZaYuoaBQWJqeVw3f2e2rXK4HB"
+          redirectUri={`${window.location.origin}/content`}
+        >
+          <Home />
+        </Auth0Provider>
+      </div>
+    );
+  }
 }
 
 export default App;

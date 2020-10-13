@@ -1,13 +1,11 @@
 import React from 'react';
-import CurrBlob from "../../assets/curr-blob.svg";
-import Check from "../../assets/check-mark.svg";
-import "./Curriculum.css";
+import CurrBlob from '../../assets/curr-blob.svg';
+import Check from '../../assets/check-mark.svg';
+import './Curriculum.css';
 import BottomWave from '../../assets/intro-bottom-wave.svg';
 import Books from '../../assets/books.svg';
 
-
 const Curriculum = () => {
-
 
   return(
     <div>
@@ -45,11 +43,11 @@ const Curriculum = () => {
               <li><img className="check" src={Check}/> &nbsp; Singly Linked Lists</li>
               <li><img className="check" src={Check}/> &nbsp; Doubly Linked Lists</li>
             </ul>
+
       </div>
+      <img src={BottomWave} />
     </div>
-      <img src={BottomWave} /> 
-    </div>
-  )
-}
+  );
+};
 
 export default Curriculum;
