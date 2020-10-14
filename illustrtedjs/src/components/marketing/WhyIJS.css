@@ -1,153 +1,155 @@
 .intro-box {
-	display: grid;
-	height: 80vh;
-	margin-top: 4rem;
-	grid-template-columns: .5fr repeat(2, 1fr) .5fr;
-	grid-template-rows: 1fr;
-	/* grid-gap: 2rem; */
-	/* align-items: center; */
+  display: grid;
+  height: 80vh;
+  margin-top: 4rem;
+  grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
+  grid-template-rows: 1fr;
+  /* grid-gap: 2rem; */
+  /* align-items: center; */
 }
 
 .intro-blob {
-	size: auto;
-	z-index: -1;
-	position: absolute;
-	left: 50%;
-	top: -20%;
+  size: auto;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  top: -20%;
 }
 
-.pre-header{
-	letter-spacing: 2px;
+.pre-header {
+  letter-spacing: 2px;
 }
 
 .computer-box {
-	display: flex;
-	align-items: center;
-	grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  align-items: center;
+  grid-area: 1 / 3 / 2 / 4;
 }
-
 
 .intro-paragraph {
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
-.introTitle{
-	font-size: calc(46px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+.introTitle {
+  font-size: calc(46px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .introText {
-	grid-area: 1 / 2 / 2 / 3;
-	/* margin: 0 0 0 8rem; */
-	text-align: left;
-	color: rgb(44, 53, 59);
-	align-self: center;
+  grid-area: 1 / 2 / 2 / 3;
+  /* margin: 0 0 0 8rem; */
+  text-align: left;
+  color: rgb(44, 53, 59);
+  align-self: center;
 }
 
 .introColor {
-	color: #1e6ae3;
+  color: #1e6ae3;
 }
 
 .intro-button {
-	text-decoration: none;
-	color: white;
-	margin-top: 4rem;
-	padding: 1rem 2rem;
-	background-color: #6B9EFC;
-	border-radius: 5rem;
-	font-size: 1rem;
-	font-weight: 600;
-	-webkit-box-shadow: 0px 0px 33px -8px #a9b1c1;
-	-moz-box-shadow: 0px 0px 33px -8px #a9b1c1;
-	box-shadow: 0px 0px 33px -8px #a9b1c1;
+  text-decoration: none;
+  color: white;
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  background-color: #6b9efc;
+  border-radius: 5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 0px 33px -8px #a9b1c1;
+  -moz-box-shadow: 0px 0px 33px -8px #a9b1c1;
+  box-shadow: 0px 0px 33px -8px #a9b1c1;
 }
 
 .introCheckoutContentContainer {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .introCheckoutContent {
-	font-size: 1.9rem;
-	color: rgb(44, 53, 59);
-	margin-left: 3%;
-	line-height: 2.5;
+  font-size: 1.9rem;
+  color: rgb(44, 53, 59);
+  margin-left: 3%;
+  line-height: 2.5;
 }
 .introTextList {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 50%;
-	margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
 }
 .intro1 {
-	width: 75%;
+  width: 75%;
 }
 .intro2 {
-	width: 75%;
-	margin-left: 28%;
+  width: 75%;
+  margin-left: 28%;
 }
 
 .introButtons {
-	display: flex;
-	width: 63%;
-	justify-content: space-around;
-	margin: 0 auto;
+  display: flex;
+  width: 63%;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 #introPurchase {
-	font-size: 2.2rem;
-	width: 350px;
-	margin-top: 4%;
+  font-size: 2.2rem;
+  width: 350px;
+  margin-top: 4%;
 }
 
 #introLearn {
-	font-size: 2.2rem;
-	width: 350px;
-	margin-top: 4%;
-	background: none;
-	color: rgb(44, 53, 59);
-	border: 2px solid rgb(44, 53, 59);
-	box-shadow: none;
+  font-size: 2.2rem;
+  width: 350px;
+  margin-top: 4%;
+  background: none;
+  color: rgb(44, 53, 59);
+  border: 2px solid rgb(44, 53, 59);
+  box-shadow: none;
 }
 
 #introLearn:hover {
-	cursor: pointer;
-	transition: 0.1s;
-	color: white;
-	background: linear-gradient(
-		90deg,
-		rgba(30, 106, 227, 1) 0%,
-		rgb(0, 140, 255) 100%
-	);
+  cursor: pointer;
+  transition: 0.1s;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(30, 106, 227, 1) 0%,
+    rgb(0, 140, 255) 100%
+  );
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1024px) {
-	.introText {
-		font-size: 1rem;
-		text-align: center;
-		margin: 0 4rem;
-	}
-	.intro-box {
-		display: flex;
-		flex-direction: column-reverse;
-		justify-content: center;
-		margin-bottom: 10rem;
-	}
-	.computer-box {
-		justify-content: center;
-		width: 40%;
-		margin: auto;
-		align-items: center;
-	}
-	.computer {
-		width: 40%;
-	}
-	.intro-blob {
-		z-index: -1;
-		left: 50%;
-		width: 100%;
-	}
+@media screen and (max-width: 1042px) {
+  .introText {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 4rem;
+  }
+  .intro-paragraph {
+    text-align: justify;
+  }
+  .intro-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 10rem;
+  }
+  .computer-box {
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    align-items: center;
+  }
+  .computer {
+    width: 40%;
+  }
+  .intro-blob {
+    z-index: -1;
+    left: 50%;
+    width: 100%;
+  }
 }
 
 /* .introMedia {

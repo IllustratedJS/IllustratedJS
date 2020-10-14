@@ -1,6 +1,6 @@
 .navigation {
   display: grid;
-  margin-top: 1rem;
+  margin-top: 0rem;
   grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
@@ -49,18 +49,32 @@
   display: flex;
   width: 35px;
   height: 5px;
-  background-color: #1e6ae3;
+  background-color: rgb(0, 140, 255);
   margin: 5px;
+  border-radius: 1rem;
 }
 
 /* --MEDIA QUERIES-- */
 
-@media screen and (max-width: 1024px) {
-  /* .navigationLinks-box{
+@media screen and (max-width: 1460px) {
+  .navigation {
     width: 100%;
-  } */
-  /* .navigationLogo{
-    width: 70%;
+    display: grid;
+    grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+  }
+  .navigationLinks {
+    width: 100%;
+  }
+
+  .navigationLinks-box {
+    grid-area: 1 / 3 / 2 / 5;
+  }
+  .navigationLogo {
+    grid-area: 1 / 2 / 2 /3;
+    width: 50%;
+  }
+  /* .navLink {
+    font-size: 12px;
   } */
 }
 
@@ -102,6 +116,12 @@
   .navigationLogo {
     grid-area: 1 / 2 / 2 / 3;
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navigationLogo {
+    width: 70%;
   }
 }
 
