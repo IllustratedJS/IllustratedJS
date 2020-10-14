@@ -10,7 +10,19 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	color: #373737;
 }
+
+h4 {
+  font-weight: bold;
+  font-size: calc(15px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+} 
+
+h5 {
+	font-weight: bold;
+	margin: 1rem 0;
+  font-size: calc(12px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+} 
 
 @media screen and (max-width: 1024px) {
 	body {

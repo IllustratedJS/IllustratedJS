@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Lottie from 'react-lottie';
 import computer from '../../assets/lotties/Computer.json';
-// <Computer loop={true} />
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Intro = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+    AOS.refresh();
+  });
+
   const defaultOptions = {
     loop: false,
     autoplay: true,
@@ -15,7 +24,7 @@ const Intro = () => {
   };
   return (
     <div className="intro-box">
-      <div className="introText">
+      <div className="introText" data-aos="fade-left">
         <p className="pre-header">
           THE <span className="introColor"> JAVASCRIPT</span> COMPUTER SCIENCE
           PLATFORM
@@ -32,7 +41,7 @@ const Intro = () => {
           Curriculum
         </a>
       </div>
-      <div className="computer-box">
+      <div className="computer-box" data-aos="fade-right">
         <Lottie options={defaultOptions} />
       </div>
     </div>

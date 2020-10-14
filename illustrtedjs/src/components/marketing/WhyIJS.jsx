@@ -3,11 +3,12 @@ import './WhyIJS.css';
 import Intro from './Intro';
 import About from './About';
 import Curriculum from './Curriculum';
+import LearningStyle from './LearningStyle';
 import IntroFeatures from './IntroFeatures';
 import AuthButton from '../AuthButton';
 import LearnButton from '../LearnButton';
 import Background from "../marketing/background";
-import blob from "../../assets/intro-grey-blob.svg";
+import blob from "../../assets/intro-blob.svg";
 
 const WhyIJS = () => {
   return (
@@ -17,6 +18,7 @@ const WhyIJS = () => {
         <Intro />
         <About />
         <Curriculum />
+        <LearningStyle />
         {/* <Background/> */}
         {/* <IntroFeatures /> */}
         <div className="introButtons">
