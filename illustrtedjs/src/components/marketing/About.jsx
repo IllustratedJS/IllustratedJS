@@ -43,7 +43,7 @@ const About = () => {
 							</p>
 						</div>
 
-						<div className="illu" data-aos='zoom-in'>
+						<div className="illu" data-aos='zoom-in' data-aos-delay="100">
 							<div className='topic-title'>
 								<img className='icons' src={Illustration} />
 								<h4>Illustrations</h4>
@@ -54,7 +54,7 @@ const About = () => {
 							</p>
 						</div>
 
-						<div className="doc-code" data-aos='zoom-in'>
+						<div className="doc-code" data-aos='zoom-in' data-aos-delay="200">
 							<div className='topic-title'>
 								<img className='icons' src={Doc} />
 								<h4>Documented Code</h4>
@@ -75,7 +75,7 @@ const About = () => {
 							</p>
 						</div>
 				
-						<div className="about-5" data-aos='zoom-in'>
+						<div className="about-5" data-aos='zoom-in' data-aos-delay="100">
 						<div className='topic-title'>
 							<img className='icons' src={Discord} />
 							<h4>Online Community</h4>
@@ -85,7 +85,7 @@ const About = () => {
 							</p>
 						</div>
 
-						<div className="about-6" data-aos='zoom-in'>
+						<div className="about-6" data-aos='zoom-in' data-aos-delay="200">
 							<div className='topic-title'>
 								<img className='icons' src={Guides} />
 								<h4>Written Guides</h4>
