@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Button from '../AuthButton';
-import logo from '../../assets/iJS-logo-gradient.svg';
+import logo from '../../assets/website-logo.svg';
 
 import './Navigation.css';
 import BurgerMenu from "./BurgerMenu.jsx";
