@@ -1,110 +1,135 @@
 .curriculum-box {
-  background: #d1e1fe;
-  padding: 6rem 1rem;
-  display: grid;
-  grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+	background: #d1e1fe;
+	padding: 6rem 1rem;
+	display: grid;
+	grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+	grid-template-rows: repeat(4, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
 }
 
 .top-wave {
-  position: relative;
-  top: 10px;
+	position: relative;
+	top: 10px;
 }
 .bottom-wave {
-  position: relative;
-  bottom: 10px;
+	position: relative;
+	bottom: 10px;
 }
 
 .curriculum-title {
-  grid-area: 1 / 2 / 2 / 5;
-  text-align: center;
-  color: #333333;
-  display: flex;
-  width: 70%;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	grid-area: 1 / 2 / 2 / 5;
+	text-align: center;
+	color: #333333;
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .curriculum-title h2 {
-  font-size: calc(36px + (26 - 22) * ((100vw - 300px) / (1600 - 300)));
-}
+    color: #333333;
+    font-size: calc(30px + (26 - 22) * ((100vw - 300px) / (1600 - 300)));
+  }
 
 .curr-topics {
-  grid-area: 2 / 2 / 5 / 3;
-  display: flex;
-  flex-direction: column;
-  margin: 6rem 0;
+	grid-area: 2 / 2 / 5 / 3;
+	display: flex;
+	flex-direction: column;
+	margin: 6rem 0;
 }
 
 .course-view {
-  /* grid-area: 2 / 2 / 3 / 3; */
-  background-color: white;
-  padding: 1rem;
-  margin: 1rem 2rem 0 0;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-  -moz-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-  box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-  cursor: pointer;
+	background-color: white;
+	padding: 1rem;
+	margin: 1rem 2rem 0 0;
+	border-radius: 0.5rem;
+	-webkit-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
+	-moz-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
+	box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
+	cursor: pointer;
 }
 
 #active {
-  background-color: #6b9efc;
-  color: white;
-}
-
-.algo {
-  /* grid-area: 3 / 2 / 4 / 3; */
-  background-color: white;
-  padding: 1rem;
-  margin: 1rem 2rem 0 0;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-  -moz-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-  box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-}
-
-.ajs {
-  /* grid-area: 4 / 2 / 5 / 3; */
-  background-color: white;
-  padding: 1rem;
-  margin: 1rem 2rem 0 0;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-  -moz-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-  box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
+	background-color: #6b9efc;
+	color: white;
 }
 
 .curr-lottie {
-  grid-area: 2 / 3 / 5 / 5;
-  border: #373737 solid 1rem;
-  border-radius: 3rem;
-  margin: 6rem 4rem;
-  background-color: white;
-  -webkit-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-  -moz-box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
-  box-shadow: 0px 4px 24px -5px rgba(94, 138, 209, 1);
+	grid-area: 2 / 3 / 5 / 5;
+	margin: 6rem 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.curr-lottie img {
+	width: 100%;
+}
+
+@media screen and (max-width: 1348px) {
+	.curriculum-box {
+		grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+		grid-template-rows: 1fr 0.5fr repeat(2, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+	.curriculum-title {
+		grid-area: 1 / 2 / 2 / 5;
+		text-align: justify;
+	}
+
+	.curr-topics {
+		grid-area: 2 / 2 / 3 / 5;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0rem;
+		align-items: flex-end;
+	}
+	.course-view {
+		width: 25%;
+		height: 3rem;
+		text-align: center;
+		margin: 3% auto;
+	}
+
+	.curr-lottie {
+		grid-area: 3 / 2 / 5 / 5;
+	}
+
+	.curr-desc {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1024px) {
-  .curriculum-box {
-    display: flex;
-    flex-direction: column;
-    padding: 7rem 4rem;
-  }
-  .books {
-    width: 40%;
-  }
-  .curriculum-title {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  .curriculum-title h2 {
-    text-align: center;
-    margin: 0 auto;
-  }
+	.curriculum-box {
+		display: flex;
+		flex-direction: column;
+		padding: 7rem 4rem;
+	}
+	.books {
+		width: 40%;
+	}
+	.curriculum-title {
+		text-align: justify;
+		margin-top: 2rem;
+	}
+	.curriculum-title h2 {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.curr-topics {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.course-view {
+		width: 60%;
+		margin: 2% auto;
+	}
 }

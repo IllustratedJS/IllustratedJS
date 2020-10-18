@@ -22,15 +22,7 @@ const About = () => {
 			<div className='about-box'>
 				<div className='about-title' data-aos='fade-down'>
 					<h2>illustratedJS is built for learning developers like you.  As a team, we focus on delivering <span className="introColor">intuitive visualizations</span> to supplement abstract concepts.</h2>
-					{/* <p className='introParagraph' style={{'text-align': 'justify'}}>
-						We're on a mission to change the way you think and learn about
-						computer science. Don't spend another minute looking through threads
-						for solutions or watching 4 different videos just to try to piece
-						together what you don't know. As a team we focus on delivering you
-						high quality visualizations to supplement abstract concepts. Our
-						entire product is focused on providing you materials that support
-						all learning styles.{' '}
-					</p> */}
+
 				</div>
 						<div className="vid-desc" data-aos='zoom-in'>
 							<div className='topic-title'>

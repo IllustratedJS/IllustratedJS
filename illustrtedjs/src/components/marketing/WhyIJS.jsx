@@ -9,16 +9,18 @@ import AuthButton from '../AuthButton';
 import LearnButton from '../LearnButton';
 import Background from "../marketing/background";
 import blob from "../../assets/intro-blob.svg";
+import Footer from './Footer';
 
 const WhyIJS = () => {
   return (
     <main>
       <div className="introContainer">
-        <img className="intro-blob" src={blob} />
+        {/* <img className="intro-blob" src={blob} /> */}
         <Intro />
         <About />
         <Curriculum />
         <LearningStyle />
+        <Footer />
         {/* <Background/> */}
         {/* <IntroFeatures /> */}
         <div className="introButtons">
