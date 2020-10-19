@@ -7,7 +7,6 @@ import BottomWave from '../../assets/intro-bottom-wave.svg';
 import dataImage from '../../assets/Data Science@4x-100.jpg';
 import algoImage from '../../assets/Algorithm@4x-100.jpg';
 import jsImage from '../../assets/Advanced JS@4x-100.jpg';
-import Books from '../../assets/books.svg';
 
 const Curriculum = () => {
   useEffect(() => {
@@ -45,13 +44,13 @@ const Curriculum = () => {
         <a name="curriculum"></a>
         <div className="curriculum-title">
           <h2>Curriculum</h2>
-          <p>
-            We're on a mission to change the way you think and learn about
+          <p>We're on a mission to change the way you think and learn about
             computer science. Don't spend another minute looking through threads
             for solutions or watching multiple videos just to try to piece
             together complex.
-          </p>
+            </p>
         </div>
+        
         <div className="curr-topics">
           <div
             className="course-view"
@@ -62,9 +61,9 @@ const Curriculum = () => {
                 data: true
               })
             }
-          >
+            >
             <h5>Data Structures</h5>
-            <p>
+            <p className="curr-desc">
               Whether stacks, queues or lists, data science is a common topic
               for technical interviews.
             </p>
@@ -79,9 +78,9 @@ const Curriculum = () => {
                 algo: true
               })
             }
-          >
+            >
             <h5>Algorithms</h5>
-            <p>
+            <p className="curr-desc">
               Get a better grasp on the heavy lifting math equations. Our
               algorithm course will walk you through with confidence.
             </p>
@@ -96,9 +95,9 @@ const Curriculum = () => {
                 js: true
               })
             }
-          >
+            >
             <h5>Advanced JavaScript</h5>
-            <p>
+            <p className="curr-desc">
               The fundamentals of JS is not the finish line. Expand the depth of
               your knowledge of the popular programming language.
             </p>

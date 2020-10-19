@@ -120,11 +120,15 @@
 	.about-box {
 		display: flex;
 		flex-direction: column;
-		padding: 0 4rem;
-  }
+		/* padding: 0 4rem; */
+	}
+	.about-title h2{
+		text-align: left;
+	}
   .topic-title{
-    align-items: center;
-  }
+		align-items: center;
+	}
+	
   .about-p{
     text-align: center;
   }
