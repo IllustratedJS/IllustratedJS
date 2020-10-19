@@ -1,0 +1,67 @@
+.purchase-button {
+  padding: 2%;
+  margin: 2% auto;
+  text-align: center;
+  border: 0px solid black;
+  padding: 12px 30px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+#lifetime {
+  background: linear-gradient(
+    90deg,
+    rgba(240, 121, 142, 1) 0%,
+    rgba(240, 121, 142, 1) 0%
+  );
+}
+
+#lifetime:hover {
+  cursor: pointer;
+  transition: 1s;
+  background: linear-gradient(
+    90deg,
+    rgba(240, 121, 142, 1) 0%,
+    rgb(243, 153, 169) 100%
+  );
+}
+
+#committed {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 198, 75, 1) 0%,
+    rgba(255, 198, 75, 1) 0%
+  );
+}
+
+#committed:hover {
+  cursor: pointer;
+  transition: 1s;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 198, 75, 1) 0%,
+    rgb(248, 211, 132) 100%
+  );
+}
+
+#prepper {
+  background: linear-gradient(
+    90deg,
+    rgba(107, 158, 252, 1) 0%,
+    rgba(107, 158, 252, 1) 0%
+  );
+}
+
+#prepper:hover {
+  cursor: pointer;
+  transition: 1s;
+  background: linear-gradient(
+    90deg,
+    rgba(107, 158, 252, 1) 0%,
+    rgb(130, 170, 243) 100%
+  );
+}

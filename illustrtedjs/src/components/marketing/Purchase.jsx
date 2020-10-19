@@ -1,125 +1,97 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Purchase.css';
 import Button from '../AuthButton';
 import { useAuth0 } from '@auth0/auth0-react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import PurchaseFeatures from './PurchaseFeatures';
+import PurchaseButton from '../PurchaseButton';
+import LearningStyle from './LearningStyle.jsx';
+import Footer from './Footer';
+import './LearningStyle.css';
+import Headshot from '../../assets/testimony-headshot.jpg';
+import Testimonial from './Testimonial';
 
 const Purchase = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    });
+    AOS.refresh();
+  });
+
   const { loginWithRedirect } = useAuth0();
-
+  const lifetime = { price: 199, frequency: 'once' };
+  const committed = { price: 149, frequency: 'yearly' };
+  const prepper = { price: 29, frequency: 'monthly' };
   return (
-    <>
-      <h1 className="planHeader">A Study Plan For Everyone</h1>
-      <main className="planContainer">
-        <div className="plan">
-          <div className="planH">
-            <h2 className="planName">Job Prepper</h2>
-            <div className="planPrice">
-              <span className="planBig">
-                <span className="planCurrency">$</span>29
-              </span>
-              <span>.99/month</span>
+    <div>
+      <div className="purchase-page">
+        <div className="plan-header">
+          <h1>A Study Plan For Everyone</h1>
+        </div>
+        <main className="plan-container">
+          <div className="plan-pricing lifetime-learner">
+            <h2>Lifetime Learner</h2>
+            <div className="plan-info">
+              <div className="pricing">
+                <h3>${lifetime.price}</h3>
+                <p>lifetime access</p>
+              </div>
+              <div className="plan-content">
+                <PurchaseFeatures />
+              </div>
+              <PurchaseButton
+                text="Purchase Now"
+                id="lifetime"
+                price={lifetime}
+              />
             </div>
-            <div className="planDescriptionContainer">
-              <span>
-                You have a big interview coming up or you just want to test the
-                waters with Illustrated JS. Our Job Prepper plan is perfect for
-                those who don't want a big commitment.
-              </span>
-              <ul>
-                <li className="planList">
-                  <span role="img" aria-label="trophy emoji">
-                    ⭐
-                  </span>{' '}
-                  Access to all content
-                </li>
-              </ul>
+          </div>
+          <div className="plan-pricing committed-student">
+            <h2>Committed Student</h2>
+            <div className="plan-info">
+              <div className="pricing">
+                <h3>${committed.price}</h3>
+                <p>per year</p>
+              </div>
+              <div className="plan-content">
+                <PurchaseFeatures />
+              </div>
+              <PurchaseButton
+                text="Purchase Now"
+                id="committed"
+                price={committed}
+              />
             </div>
-            <Button text="Get Started" />
           </div>
+          <div className="plan-pricing job-prepper">
+            <h2>Job Prepper</h2>
+            <div className="plan-info">
+              <div className="pricing">
+                <h3>${prepper.price}</h3>
+                <p>per month</p>
+              </div>
+              <div className="plan-content">
+                <PurchaseFeatures />
+              </div>
+              <PurchaseButton
+                text="Purchase Now"
+                id="prepper"
+                price={prepper}
+              />
+            </div>
+          </div>
+        </main>
+        <div className="testimonial-container">
+          <Testimonial />
         </div>
-        <div className="plan">
-          <h2 className="planName">Commited Studier</h2>
-          <div className="planPrice">
-            <span className="planBig">
-              <span className="planCurrency">$</span>149
-            </span>
-            <span>.99/year</span>
-          </div>
-
-          <div className="planDescriptionContainer">
-            <span>
-              Your year long computer science adventure begins here. The
-              Committed Studier is perfect for those just finishing a coding
-              bootcamp and wanting to take a deep dive for interview prep.
-            </span>
-            <ul>
-              <li className="planList">
-                <span role="img" aria-label="trophy emoji">
-                  ⭐
-                </span>{' '}
-                Access to all content
-              </li>
-              <li className="planList">
-                <span role="img" aria-label="trophy emoji">
-                  ⭐
-                </span>{' '}
-                Free upgrades to new content
-              </li>
-              <li className="planList">
-                <span role="img" aria-label="trophy emoji">
-                  ⭐
-                </span>{' '}
-                Invite to discord community
-              </li>
-            </ul>
-          </div>
-          <Button text="Get Started" />
+        <div className="learning-style">
+          <LearningStyle />
         </div>
-        <div className="plan">
-          <h2 className="planName">Lifetime Learner</h2>
-          <div className="planPrice">
-            <span className="planBig">
-              <span className="planCurrency">$</span>300
-            </span>
-          </div>
-          <div className="planDescriptionContainer">
-            <span className="planDescription">
-              Staying current and practicing your skills is super important as
-              you advance throughout your career. Our Lifetime Learners know the
-              value of being on top of your game and ready for when the next
-              opportunity comes!
-            </span>
-            <ul>
-              <li className="planList">
-                <span role="img" aria-label="trophy emoji">
-                  ⭐
-                </span>{' '}
-                Access to all content
-              </li>
-              <li className="planList">
-                <span role="img" aria-label="trophy emoji">
-                  ⭐
-                </span>{' '}
-                Free upgrades to new content
-              </li>
-              <li className="planList">
-                <span role="img" aria-label="trophy emoji">
-                  ⭐
-                </span>{' '}
-                Invite to discord community
-              </li>
-              <li className="planList">
-                <span role="img" aria-label="trophy emoji">
-                  ⭐
-                </span>{' '}
-                Leet Code questions solved
-              </li>
-            </ul>
-          </div>
-          <Button text="Get Started" />
-        </div>
-      </main>
-    </>
+      </div>
+      <Footer />
+    </div>
   );
 };
 
