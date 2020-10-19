@@ -56,6 +56,7 @@ const Curriculum = () => {
             className="course-view"
             id={activeCourseView.data ? 'active' : null}
             data-aos="fade-right"
+            data-aos-once="true"
             onClick={() =>
               setActiveCourseView({
                 data: true
@@ -72,6 +73,7 @@ const Curriculum = () => {
             className="course-view"
             id={activeCourseView.algo ? 'active' : null}
             data-aos="fade-right"
+            data-aos-once="true"
             data-aos-delay="200"
             onClick={() =>
               setActiveCourseView({
@@ -88,6 +90,7 @@ const Curriculum = () => {
           <div
             className="course-view"
             data-aos="fade-right"
+            data-aos-once="true"
             data-aos-delay="300"
             id={activeCourseView.js ? 'active' : null}
             onClick={() =>
@@ -103,7 +106,7 @@ const Curriculum = () => {
             </p>
           </div>
         </div>
-        <div className="curr-lottie" data-aos="fade-left">
+        <div className="curr-lottie" data-aos="fade-left" data-aos-once="true">
           <img src={findCourseImage()} alt="woah" />
         </div>
       </div>
