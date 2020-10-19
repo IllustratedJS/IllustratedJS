@@ -20,11 +20,11 @@ const About = () => {
 	return (
 		<div>
 			<div className='about-box'>
-				<div className='about-title' data-aos='fade-down'>
+				<div className='about-title' data-aos='fade-down' data-aos-once="true">
 					<h2>illustratedJS is built for learning developers like you.  As a team, we focus on delivering <span className="introColor">intuitive visualizations</span> to supplement abstract concepts.</h2>
 
 				</div>
-						<div className="vid-desc" data-aos='zoom-in'>
+						<div className="vid-desc" data-aos='zoom-in' data-aos-once="true">
 							<div className='topic-title'>
 								<img className='icons' src={Video} />
 								<h4>Video Walk Through</h4>
@@ -35,7 +35,7 @@ const About = () => {
 							</p>
 						</div>
 
-						<div className="illu" data-aos='zoom-in' data-aos-delay="100">
+						<div className="illu" data-aos='zoom-in' data-aos-once="true" data-aos-delay="100">
 							<div className='topic-title'>
 								<img className='icons' src={Illustration} />
 								<h4>Illustrations</h4>
@@ -46,7 +46,7 @@ const About = () => {
 							</p>
 						</div>
 
-						<div className="doc-code" data-aos='zoom-in' data-aos-delay="200">
+						<div className="doc-code" data-aos='zoom-in' data-aos-once="true" data-aos-delay="200">
 							<div className='topic-title'>
 								<img className='icons' src={Doc} />
 								<h4>Documented Code</h4>
@@ -57,7 +57,7 @@ const About = () => {
 							</p>
 						</div>
 
-						<div className="probs" data-aos='zoom-in'>
+						<div className="probs" data-aos='zoom-in' data-aos-once="true">
 							<div className='topic-title'>
 								<img className='icons' src={Code} />
 								<h4>100+ Problems</h4>
@@ -67,7 +67,7 @@ const About = () => {
 							</p>
 						</div>
 				
-						<div className="about-5" data-aos='zoom-in' data-aos-delay="100">
+						<div className="about-5" data-aos='zoom-in' data-aos-once="true" data-aos-delay="100">
 						<div className='topic-title'>
 							<img className='icons' src={Discord} />
 							<h4>Online Community</h4>
@@ -77,7 +77,7 @@ const About = () => {
 							</p>
 						</div>
 
-						<div className="about-6" data-aos='zoom-in' data-aos-delay="200">
+						<div className="about-6" data-aos='zoom-in' data-aos-once="true" data-aos-delay="200">
 							<div className='topic-title'>
 								<img className='icons' src={Guides} />
 								<h4>Written Guides</h4>

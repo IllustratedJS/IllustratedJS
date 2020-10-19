@@ -24,7 +24,7 @@ const Intro = () => {
   };
   return (
     <div className="intro-box">
-      <div className="introText" data-aos="fade-left">
+      <div className="introText" data-aos="fade-left" data-aos-once="true">
         <p className="pre-header">
           THE <span className="introColor"> JAVASCRIPT</span> COMPUTER SCIENCE
           PLATFORM
@@ -41,7 +41,7 @@ const Intro = () => {
           Curriculum
         </a>
       </div>
-      <div className="computer-box" data-aos="fade-right">
+      <div className="computer-box" data-aos="fade-right" data-aos-once="true">
         <Lottie options={defaultOptions} />
       </div>
     </div>
