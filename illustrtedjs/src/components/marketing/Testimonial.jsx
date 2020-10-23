@@ -36,7 +36,7 @@ const Testimonial = () => {
     }
   ];
   return (
-    <div>
+    <div className="all-testimonials">
       {testimonials.map(data => {
         return (
           <div key={data.name} className="one-testimonial">

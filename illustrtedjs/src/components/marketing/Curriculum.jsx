@@ -4,9 +4,9 @@ import 'aos/dist/aos.css';
 import './Curriculum.css';
 import TopWave from '../../assets/intro-top-wave.svg';
 import BottomWave from '../../assets/intro-bottom-wave.svg';
-import dataImage from '../../assets/Data Science@4x-100.jpg';
-import algoImage from '../../assets/Algorithm@4x-100.jpg';
-import jsImage from '../../assets/Advanced JS@4x-100.jpg';
+import dataImage from '../../assets/DataStructure.svg';
+import algoImage from '../../assets/Algorithms.svg';
+import jsImage from '../../assets/AdvancedJS.svg';
 
 const Curriculum = () => {
   useEffect(() => {

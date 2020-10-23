@@ -15,7 +15,7 @@ const WhyIJS = () => {
   return (
     <main>
       <div className="introContainer">
-        {/* <img className="intro-blob" src={blob} /> */}
+        <img className="intro-blob" src={blob} />
         <Intro />
         <About />
         <Curriculum />

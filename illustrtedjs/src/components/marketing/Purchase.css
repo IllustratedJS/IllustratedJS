@@ -129,15 +129,20 @@
 /* TESTIMONIALS */
 
 .testimonial-container {
+  margin: 20rem 0 10rem 0;
   grid-area: 3 / 2 / 4 / 5;
+}
+
+.all-testimonials{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  /* flex-direction:  */
+  flex-wrap: wrap;
 }
 
 .one-testimonial {
   display: flex;
+  width: 40%;
+  margin: 0;
   flex-direction: column;
   text-align: left;
   justify-content: center;
@@ -152,6 +157,11 @@
 .testimonial-title {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-title h4, h5{
+  margin: 0;
 }
 
 .testimony-headshot {
@@ -166,4 +176,5 @@
 /* LEARNING STYLES  */
 .learning-style {
   grid-area: 4 / 2 / 5 / 5;
+  align-self: center;
 }

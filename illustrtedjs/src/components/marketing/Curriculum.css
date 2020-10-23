@@ -17,6 +17,10 @@
 	bottom: 10px;
 }
 
+.curr-desc {
+	font-size: 12px;
+}
+
 .curriculum-title {
 	grid-area: 1 / 2 / 2 / 5;
 	text-align: center;
